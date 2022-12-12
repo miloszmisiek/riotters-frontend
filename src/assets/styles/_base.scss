@@ -1,0 +1,39 @@
+html,
+body{
+  min-height: max-content;
+  height: 100%;
+  width: 100%;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+#app {
+  display: flex;
+  min-height: 100%;
+  height: max-content;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+main {
+  max-width: 1176px;
+  min-height: 900px;
+  padding: 2rem 4.25rem;
+  margin: auto;
+  border-radius: 8px;
+  background-color: white;
+
+  @media screen and (max-width: 500px) {
+    padding: 2rem 1rem;
+  }
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.btn:hover,
+.btn:focus {
+  border-color: transparent !important;
+}
